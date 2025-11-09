@@ -1,3 +1,6 @@
 {
-  "item.tutorialmod.coconut": "Coconut"
+  "item.tutorialmod.coconut": "Coconut",
+  "item.tutorialmod.raw_coconut": "Raw Coconut",
+
+  "creativetab.tutorial_tab": "MOD TAB"
 }

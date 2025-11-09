@@ -13,6 +13,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> COCONUT = ITEMS.register("coconut",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_COCONUT = ITEMS.register("raw_coconut",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

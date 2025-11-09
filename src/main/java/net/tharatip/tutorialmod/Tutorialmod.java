@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.tharatip.tutorialmod.item.ModCreativeModTab;
 import net.tharatip.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -26,6 +27,8 @@ public class Tutorialmod
     public Tutorialmod(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModTab.register(modEventBus);
 
         ModItems.register(modEventBus);
 
@@ -45,6 +48,7 @@ public class Tutorialmod
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COCONUT);
+            event.accept(ModItems.RAW_COCONUT);
         }
     }
 
